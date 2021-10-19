@@ -106,7 +106,7 @@ Token *tokenize(char *p) {
 
     while (*p) {
         // 空白文字をスキップ
-        if(isspace(*p)) {
+        if (isspace(*p)) {
             p++;
             continue;
         }
@@ -159,7 +159,7 @@ int main(int argc, char **argv) {
         }
 
         if (consume('-')) {
-            printf("    sub rax, %d\n",expect_num());
+            printf("    sub rax, %d\n", expect_num());
             continue;
         }
     }
