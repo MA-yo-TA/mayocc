@@ -133,7 +133,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunManager" selected="Makefile アプリケーション.dtest">
     <configuration name="dmake" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mayocc" TARGET_NAME="dmake" CONFIG_NAME="dmake" version="1" RUN_PATH="$PROJECT_DIR$/Makefile">
@@ -198,7 +198,7 @@
       <workItem from="1634643581423" duration="395000" />
       <workItem from="1634644020887" duration="14603000" />
       <workItem from="1635227222171" duration="210000" />
-      <workItem from="1635524647208" duration="363000" />
+      <workItem from="1635524647208" duration="6769000" />
     </task>
     <servers />
   </component>
