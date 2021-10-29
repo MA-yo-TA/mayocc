@@ -69,6 +69,15 @@ Token *tokenize() {
             continue;
         }
 
+        // 英小文字1文字なら変数だとみなす
+        if ('a' <= *p && *p 'z') {
+            new_token = make_new_token(TK_ID, p, 1);
+            append_new_token(new_token, current_token);
+            current_token = new_token;
+            p += 1;
+            continue;
+        }
+
         if (isdigit(*p)) {
             new_token = make_new_token(TK_NUM, p, 0);
             append_new_token(new_token, current_token);

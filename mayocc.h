@@ -15,6 +15,7 @@
 // トークンの種類
 typedef enum {
     TK_RESERVED, // 記号
+    TK_ID,       // 識別子
     TK_NUM,      // 整数トークン
     TK_EOF,      // 入力の終わりを表すトークン
 } TokenKind;
@@ -68,7 +69,7 @@ extern char *user_input;
 // 関数宣言
 //-----
 extern Token *tokenize();
-extern Node *expr();
+extern Node *program();
 extern void gen(Node *node);
 extern void error_at(char *loc, char *format, ...);
 

@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
     // トークナイズしてパースする
     user_input = argv[1];
     g_current_token = tokenize();
-    Node *tree_top = expr();
+    Node *tree_top = program();
 
     // アセンブリの前半部分を出力
     printf(".intel_syntax noprefix\n");

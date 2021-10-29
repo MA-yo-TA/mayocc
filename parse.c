@@ -61,7 +61,13 @@ Node *make_new_num_node(int val) {
 
 
 // パーサ用の関数。循環参照しているので最初に宣言だけしておく。
+Node *program();
+
+Node *stmt();
+
 Node *expr();
+
+Node *assign();
 
 Node *equality();
 
