@@ -21,9 +21,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d05c820-a07e-48e9-b779-3d9888b07b90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/codegen.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mayocc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parse.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tokenize.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mayocc.c" beforeDir="false" afterPath="$PROJECT_DIR$/mayocc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mayocc.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +141,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Makefile アプリケーション.dtest">
+  <component name="RunManager" selected="Makefile アプリケーション.dmake">
     <configuration name="dmake" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mayocc" TARGET_NAME="dmake" CONFIG_NAME="dmake" version="1" RUN_PATH="$PROJECT_DIR$/Makefile">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -198,7 +204,7 @@
       <workItem from="1634643581423" duration="395000" />
       <workItem from="1634644020887" duration="14603000" />
       <workItem from="1635227222171" duration="210000" />
-      <workItem from="1635524647208" duration="6769000" />
+      <workItem from="1635524647208" duration="11965000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,17 @@
 CFLAGS=-std=c11 -g -static
+SRCS=$(wildcard *.c)
+OBJS=$(SRCS:.c=.o)
 
-dmake: mayocc.c
+dmake:
 	 docker run --rm -v ~/Programming/mayocc:/mayocc -w /mayocc compilerbook make mayocc
 
 dtest: mayocc
 	docker run --rm -v ~/Programming/mayocc:/mayocc -w /mayocc compilerbook make test
 
-mayocc: mayocc.c
+mayocc: $(OBJS)
+	$(CC) -o mayocc $(OBJS) $(LDFLAGS)
+
+$(OBJS): mayocc.h
 
 test: mayocc
 	./test.sh
@@ -14,4 +19,4 @@ test: mayocc
 clean:
 	rm -f mayocc *.o *~ tmp*
 
-.PHONY: test clean
+.PHONY: test clean dtest dmake
