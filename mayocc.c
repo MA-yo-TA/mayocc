@@ -180,6 +180,7 @@ Node *make_new_num_node(int val) {
 // パーサ用の関数。再起的に循環参照しているので最初に宣言だけしておく。
 Node *expr();
 Node *mul();
+Node *unary();
 Node *primary();
 
 Node *expr() {
@@ -197,16 +198,25 @@ Node *expr() {
 
 
 Node *mul() {
-    Node *node = primary();
+    Node *node = unary();
 
     for (;;) {
         if (consume('*'))
-            node = make_new_operator_node(ND_MUL, node, primary());
+            node = make_new_operator_node(ND_MUL, node, unary());
         else if (consume('/'))
-            node = make_new_operator_node(ND_DIV, node, primary());
+            node = make_new_operator_node(ND_DIV, node, unary());
         else
             return node;
     }
+}
+
+
+Node *unary() {
+    if (consume('+'))
+        return primary();
+    if (consume('-'))
+        return make_new_operator_node(ND_SUB, make_new_num_node(0), primary());
+    return primary();
 }
 
 
